@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"/mnt/c/Users/juanesdev/puertoBaru/src/assets/FrontPage.png":[["FrontPage.da8b3600.png","L3Ik"],"L3Ik"],"./../assets/Baru.png":[["Baru.d3507011.png","pvVh"],"pvVh"],"./../assets/Oranges.jpg":[["Oranges.4080a0a2.jpg","aJtX"],"aJtX"],"./../assets/FullStorage.jpg":[["FullStorage.83d4417c.jpg","PhhL"],"PhhL"],"./../assets/CommercialCargo.jpg":[["CommercialCargo.4b4447a4.jpg","n3OO"],"n3OO"],"./../assets/SandConcession.jpg":[["SandConcession.e17b0730.jpg","f8hp"],"f8hp"],"./../assets/Grain.jpg":[["Grain.df54c9c1.jpg","Nzt2"],"Nzt2"],"./../assets/Tourism.jpg":[["Tourism.d7a55df8.jpg","sp3D"],"sp3D"],"./../assets/Worker.png":[["Worker.9689159b.png","oqY9"],"oqY9"]}],"Focm":[function(require,module,exports) {
 "use strict";require("/styles/main.sass"),console.log("Hola mundo con Parcel.js");
 },{"/styles/main.sass":"n75K"}]},{},["Focm"], null)
-//# sourceMappingURL=/src.ff1ad6ae.js.map
+//# sourceMappingURL=src.4c3c9688.js.map
