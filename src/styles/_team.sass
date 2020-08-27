@@ -17,17 +17,47 @@
             background: $color-orange
             height: 7px
 
-        .team_ceo
+    .team_dist
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: auto
+
+        .team__ceo
             display: grid
-            grid-template-columns: 1fr 2fr
-            grid-template-rows: 1fr 2fr
+            grid-template-columns: 300px 3fr
+            grid-template-rows: auto
             grid-template-areas: ". team__ceo-title" "team__ceo-face1 team__ceo-text"
+            margin-top: 50px
 
             .team__ceo-title
                 grid-area: team__ceo-title
+                font-size: 2rem
+                font-weight: 400
+                color: $color-primary
 
             .team__ceo-face1
                 grid-area: team__ceo-face1
+                width: 100%
+                height: 100%
+
+                .team__ceo-face1-img
+                    width: 150px
+                    height: 150px
+                    background: url('../assets/face1.png')
+                    background-position: center
+                    background-size: cover
+                    border-radius: 50%
+                    position: relative
+                    left: 40%
 
             .team__ceo-text
                 grid-area: team__ceo-text
+
+                .team__ceo-text-p
+                    font-size: 1.2rem
+                    font-weight: 300
+                    color: $color-primary
+                .p1
+                    margin-top: 0
+                    span
+                        font-weight: bold
