@@ -14,30 +14,35 @@
         width: 100%
         background: rgba($color-orange, .8)
         margin: auto auto
-        display: flex
-        align-items: center
-        justify-content: center
+        // display: flex
+        // flex-direction: column
+        // align-items: center
+        // justify-content: center
+
+        .history__text-title
+            text-transform: uppercase
+            font-size: 1rem
+            margin-top: 70px
+            position: relative
+            color: white
+            text-align: center
+            &::after
+                content: ''
+                position: absolute
+                left: 47.8%
+                bottom: -20px
+                width: 5%
+                background: $color-primary
+                height: 7px
 
         .history__text
+            height: 80vh
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
             color: white
-
-            .history__text-title
-                text-transform: uppercase
-                font-size: 1rem
-                margin-top: 70px
-                position: relative
-                &::after
-                    content: ''
-                    position: absolute
-                    left: 5%
-                    bottom: -20px
-                    width: 90%
-                    background: $color-primary
-                    height: 7px
+            padding: 0 50px
 
             .history__text-subtitle
                 text-transform: capitalize

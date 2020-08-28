@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,qBAEAA,QAAQC,IAAI","file":"src.f5814cd1.js","sourceRoot":"../src","sourcesContent":["import '/styles/main.sass';\n\nconsole.log('Hola mundo con Parcel.js');"]}
