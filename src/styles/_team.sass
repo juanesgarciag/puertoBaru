@@ -1,5 +1,5 @@
 .team
-
+    margin-bottom: 60px
     .team__title
         text-transform: uppercase
         font-size: 1.1rem
@@ -61,3 +61,65 @@
                     margin-top: 0
                     span
                         font-weight: bold
+
+        .team__executive
+            display: grid
+            grid-template-columns: repeat(3, 33%)
+            grid-template-rows: auto
+            grid-template-areas: "team__executive-title team__executive-title team__executive-title" "p1 p2 p3"
+            margin-top: 20px
+
+            .team__executive-title
+                grid-area: team__executive-title
+                display: flex
+                justify-content: center
+                text-transform: capitalize
+                font-size: 1.8rem
+                color: $color-primary
+                margin-bottom: 50px
+
+            .team__executive-partner
+                display: flex
+                flex-direction: column
+                align-items: center
+                color: $color-primary
+                .team__executive-partner-img
+                    width: 150px
+                    height: 150px
+                    border-radius: 50%
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        border-radius: 50%
+                .team__executive-partner-name
+                    text-align: center
+                    font-weight: bold
+                .team__executive-partner-text
+                    text-align: center
+                    margin-top: 0
+            .p1
+                grid-area: p1
+            .p2
+                grid-area: p2
+            .p3
+                grid-area: p3
+
+        .team__button
+            text-transform: uppercase
+            display: flex
+            justify-content: center
+            align-items: center
+            line-height: .7rem
+            margin-top: 40px
+            a
+                color: white
+                font-size: .6rem
+                background: $color-orange
+                padding: 10px 30px
+                transition: 0.3s
+                text-decoration: none
+                &:hover
+                    font-size: .7rem
+                    font-weight: 700
+                    text-decoration: underline
