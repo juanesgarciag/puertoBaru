@@ -10,6 +10,10 @@
     align-items: center
     +desktopPlus
         height: 80vh
+    +desktopInv
+        height: 40vh
+    +desktop
+        height: 50vh
     +tablet
         height: 60vh
     +smartphone
@@ -48,6 +52,8 @@
         flex-direction: column
         align-items: center
         justify-content: center
+        +desktopInv
+            height: 30vh
         +desktop
             padding: 0 30px
         +tablet
@@ -65,9 +71,13 @@
             +smartphone
                 font-size: .8rem
             &:nth-child(1)
-                margin-top: 60px
+                margin-top: 80px
+                +desktop
+                    margin-top: 100px
             &:nth-child(2)
                 margin-bottom: 60px
+                +desktop
+                    margin-bottom: 30px
                 +xs
                     margin-bottom: 30px
         .about__us-text-button
