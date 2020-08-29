@@ -8,6 +8,7 @@
     <title>Puerto Baru</title>
 </head>
 <body>
+    <i class="fa fa-bars burger-button" id="burger-menu"></i>
     <header class="header">
         <nav class="header__menu">
             <span class="header__menu-span">
@@ -15,10 +16,10 @@
             </span>
             <ul class="header__menu-buttons">
                 <li><a href="#about">About us</a></li>
-                <li><a href="#">our history</a></li>
-                <li><a href="#">the project</a></li>
-                <li><a href="#">team</a></li>
-                <li><a href="#">location</a></li>
+                <li><a href="#history">our history</a></li>
+                <li><a href="#project">the project</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#location">location</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
         </nav>
@@ -100,7 +101,7 @@
         <p class="trip-text">Annual truck trips to and <br> from David, Chirquí.</p>
     </section>
 
-    <section class="team">
+    <section class="team" id="team">
         <h2 class="team__title">the team</h2>
         <div class="container team_dist">
             <div class="team__ceo">
@@ -149,7 +150,7 @@
         </div>
     </section>
 
-    <section class="location">
+    <section class="location" id="location">
         <div class="location__up">
             <h2 class="location__title">location</h2>
             <h2 class="location__subtitle">openin pathways</h2>
@@ -211,5 +212,6 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>

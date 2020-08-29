@@ -1,6 +1,6 @@
 .history
     width: 100%
-    height: 120vh
+    height: 100vh
     background: url('../assets/Oranges.jpg')
     background-position: center
     background-size: cover
@@ -8,18 +8,18 @@
     display: flex
     align-items: center
     justify-content: center
+    +tablet
+        height: 80vh
     +smartphone
-        height: 110vh
+        height: 120vh
+    +xs
+        height: 130vh
 
     .history-capa
         height: 90%
         width: 100%
         background: rgba($color-orange, .8)
         margin: auto auto
-        // display: flex
-        // flex-direction: column
-        // align-items: center
-        // justify-content: center
 
         .history__text-title
             text-transform: uppercase
@@ -40,18 +40,30 @@
                 width: 5%
                 background: $color-primary
                 height: 7px
+                +tablet
+                    width: 15%
+                    left: 43%
                 +smartphone
-                    width: 20%
-                    left: 40.5%
+                    width: 28%
+                    left: 36%
+                +xs
+                    width: 30%
+                    left: 36%
 
         .history__text
-            height: 88vh
+            height: 70vh
             display: flex
             flex-direction: column
             justify-content: center
             align-items: center
             color: white
             padding: 0 50px
+            +tablet
+                height: 55vh
+            +smartphone
+                height: 98vh
+            +xs
+                height: 105vh
 
             .history__text-subtitle
                 text-transform: capitalize
@@ -72,4 +84,6 @@
                 +desktop
                     font-size: 1.1rem
                 +tablet
-                    font-size: .9rem
+                    font-size: 1.2rem
+                +smartphone
+                    font-size: 0.9rem

@@ -2,6 +2,10 @@
 .project
     width: 100%
     height: 90vh
+    +tablet
+        height: 70vh
+    +smartphone
+        height: 90vh
 
     .project__title
         text-transform: uppercase
@@ -24,8 +28,8 @@
             background: $color-orange
             height: 7px
             +smartphone
-                width: 15%
-                left: 43.5%
+                width: 33%
+                left: 34.5%
 
     .project__text
         height: 70vh
@@ -37,6 +41,9 @@
             padding-top: 0 30px
         +tablet
             padding: 0 40px
+            height: 55vh
+        +smartphone
+            height: 70vh
 
         .project__text-title
             text-transform: capitalize
@@ -49,6 +56,8 @@
             +smartphone
                 text-align: center
                 font-size: 2rem
+            +xs
+                margin-top: 10px
 
         .project__text-p
             text-align: center
@@ -60,6 +69,8 @@
                 margin-bottom: 0
             +smartphone
                 font-size: 1rem
+            +xs
+                font-size: 0.8rem
 
     .project__text-button
         text-transform: uppercase
@@ -69,6 +80,8 @@
         line-height: .7rem
         +tablet
             margin-top: 15px
+        +smartphone
+            margin-top: 30px
         a
             color: white
             font-size: .6rem
