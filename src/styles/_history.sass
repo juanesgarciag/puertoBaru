@@ -8,6 +8,8 @@
     display: flex
     align-items: center
     justify-content: center
+    +smartphone
+        height: 110vh
 
     .history-capa
         height: 90%
@@ -26,6 +28,10 @@
             position: relative
             color: white
             text-align: center
+            +desktop
+                margin-top: 50px
+            +smartphone
+                margin-bottom: 0
             &::after
                 content: ''
                 position: absolute
@@ -34,9 +40,12 @@
                 width: 5%
                 background: $color-primary
                 height: 7px
+                +smartphone
+                    width: 20%
+                    left: 40.5%
 
         .history__text
-            height: 80vh
+            height: 88vh
             display: flex
             flex-direction: column
             justify-content: center
@@ -49,7 +58,18 @@
                 font-size: 2.5rem
                 font-weight: 400
                 padding-top: 10px
+                +desktop
+                    font-size: 2rem
+                    margin-bottom: 0px
+                +smartphone
+                    text-align: center
+                    padding-top: 0
+                    margin-top: 0
 
             .history__text-p
                 text-align: center
                 font-size: 1.2rem
+                +desktop
+                    font-size: 1.1rem
+                +tablet
+                    font-size: .9rem

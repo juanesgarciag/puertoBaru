@@ -5,14 +5,28 @@
     background-position: center
     background-size: cover
     background-repeat: no-repeat
+    +smartphone
+     height: 80vh
 
     .header__menu
         display: flex
         justify-content: space-around
+        align-items: center
         padding: 30px 250px
+        +desktop
+            padding: 30px 150px
+        +tablet
+            padding: 30px 50px
+
         .header__menu-span
-            width: 209.808px
-            height: 55.212px
+            width: 25%
+            height: auto
+            +tablet
+                width: 20%
+                height: 90%
+                margin: auto
+            +smartphone
+                width: 40%
             .header__menu-img
                 width: 100%
                 height: 100%
@@ -23,6 +37,8 @@
             display: flex
             align-items: center
             line-height: 0.7rem
+            +smartphone
+                display: none
             li
                 margin-right: 20px
                 text-transform: uppercase
@@ -43,6 +59,8 @@
         flex-direction: column
         align-items: center
         justify-content: center
+        +desktop
+            height: 50vh
         .header__text-title
             color: white
             letter-spacing: 1.5px
@@ -53,6 +71,8 @@
             font-weight: 300
             line-height: 3.7rem
             margin-bottom: 20px
+            +smartphone
+                font-size: 2.5rem
 
         .header__text-button
             text-transform: uppercase

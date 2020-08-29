@@ -8,6 +8,10 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    +smartphone
+        height: 60vh
+        background-position: 60% 50%
+
 
     .trips__counter
         display: flex
@@ -26,6 +30,11 @@
             font-weight: 400
             margin: 0
             padding: 0 25px
+            +tablet
+                font-size: 7rem
+            +smartphone
+                font-size: 4rem
+                padding: 0
 
     .trip-text
         text-align: center
@@ -33,4 +42,9 @@
         margin-top: 10px
         color: white
         font-weight: 300
+        +tablet
+            font-size: 2rem
+        +smartphone
+            font-size: 1.5rem
+
 

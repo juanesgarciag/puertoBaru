@@ -8,6 +8,8 @@
     display: flex
     flex-direction: column
     align-items: center
+    +smartphone
+        height: 70vh
 
     .about__us-cont
         display: flex
@@ -22,6 +24,8 @@
         text-transform: uppercase
         letter-spacing: 1.2px
         text-align: center
+        +desktop
+            margin-top: 50px
         &::after
             content: ''
             position: absolute
@@ -32,15 +36,21 @@
             height: 7px
 
     .about__us-text
-        height: 70vh
+        height: 50vh
         display: flex
         flex-direction: column
         align-items: center
         justify-content: center
+        +desktop
+            padding: 0 30px
         .about__us-text-p
             font-size: 1.3rem
             text-align: center
             font-weight: 400
+            +desktop
+                font-size: 1.1rem
+            +smartphone
+                font-size: .8rem
             &:nth-child(1)
                 margin-top: 60px
             &:nth-child(2)

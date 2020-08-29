@@ -1,5 +1,6 @@
 .team
     margin-bottom: 60px
+    box-sizing: border-box
     .team__title
         text-transform: uppercase
         font-size: 1.1rem
@@ -16,11 +17,17 @@
             width: 5%
             background: $color-orange
             height: 7px
+            +smartphone
+                width: 15%
+                left: 43%
 
     .team_dist
         display: grid
         grid-template-columns: 1fr
         grid-template-rows: auto
+        +smartphone
+            grid-template-columns: 350px
+            justify-content: center
 
         .team__ceo
             display: grid
@@ -28,17 +35,28 @@
             grid-template-rows: auto
             grid-template-areas: ". team__ceo-title" "team__ceo-face1 team__ceo-text"
             margin-top: 50px
-
+            +tablet
+                grid-template-columns: 1fr
+                grid-template-rows: auto
+                grid-template-areas: "team__ceo-face1" "team__ceo-title" "team__ceo-text"
+            +smartphone
+                grid-template-columns: 350px
+                justify-content: center
             .team__ceo-title
                 grid-area: team__ceo-title
                 font-size: 2rem
                 font-weight: 400
                 color: $color-primary
+                +tablet
+                    text-align: center
+                +smartphone
+                    font-size: 1.5rem
 
             .team__ceo-face1
                 grid-area: team__ceo-face1
                 width: 100%
                 height: 100%
+                box-sizing: border-box
 
                 .team__ceo-face1-img
                     width: 150px
@@ -49,9 +67,14 @@
                     border-radius: 50%
                     position: relative
                     left: 40%
+                    +smartphone
+                        left: 30%
 
             .team__ceo-text
                 grid-area: team__ceo-text
+                +tablet
+                    text-align: center
+                    padding: 0 30px
 
                 .team__ceo-text-p
                     font-size: 1.2rem
@@ -68,6 +91,11 @@
             grid-template-rows: auto
             grid-template-areas: "team__executive-title team__executive-title team__executive-title" "p1 p2 p3"
             margin-top: 20px
+            +smartphone
+                grid-template-columns: 350px
+                grid-template-rows: auto
+                grid-template-areas: "team__executive-title" "p1" "p2" "p3"
+                justify-content: center
 
             .team__executive-title
                 grid-area: team__executive-title

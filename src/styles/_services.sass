@@ -5,6 +5,13 @@
     grid-template-columns: repeat(5, 1fr)
     grid-template-rows: 1fr
     grid-template-areas: "fuel commercial sand grain tourism"
+    +tablet
+        height: 40vh
+    +smartphone
+        height: auto
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(5, 200px)
+        grid-template-areas: "fuel" "commercial" "sand" "grain" "tourism"
 
     .fuel
         grid-area: fuel
